@@ -1,0 +1,11 @@
+
+web/node_modules
+api/node_modules
+
+web/npm-debug.log*
+web/yarn-debug.log*
+web/yarn-error.log*
+
+api/npm-debug.log*
+api/yarn-debug.log*
+api/yarn-error.log*
