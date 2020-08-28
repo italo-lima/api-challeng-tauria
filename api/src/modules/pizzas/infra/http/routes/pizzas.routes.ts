@@ -7,5 +7,6 @@ const pizzasRoutes = Router();
 const pizzasController = new PizzasController();
 
 pizzasRoutes.post('/', createPizza, pizzasController.create);
+pizzasRoutes.get('/', pizzasController.index);
 
 export default pizzasRoutes;

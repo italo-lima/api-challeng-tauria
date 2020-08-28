@@ -4,6 +4,7 @@ import ICreatePizzaDTO from '@modules/pizzas/dtos/ICreatePizzaDTO';
 
 interface IPizzaRepository {
   create(data: ICreatePizzaDTO): Promise<Pizza>;
+  findAll(): Promise<Pizza[]>;
 }
 
 export default IPizzaRepository;

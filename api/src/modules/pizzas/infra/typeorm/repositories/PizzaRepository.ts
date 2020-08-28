@@ -29,6 +29,12 @@ class PizzaRepository implements IPizzaRepository {
 
     return pizza;
   }
+
+  public async findAll(): Promise<Pizza[]> {
+    const pizzas = this.ormRepository.find();
+
+    return pizzas;
+  }
 }
 
 export default PizzaRepository;
